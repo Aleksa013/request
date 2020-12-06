@@ -30,7 +30,11 @@ body {
 }
 
 .page-header-title {
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .page-header-list {
@@ -39,19 +43,24 @@ body {
 }
 
 .page-header-list-item {
+  margin: 0;
   padding: 0 0 0 20px;
   list-style-type: none;
   position: relative;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .page-header-list-item:before {
   content: "";
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 19px;
   position: absolute;
-  top: 2px;
-  left: 0;
+  top: 10px;
+  left: -10px;
   background-image: url(../img/icon.png);
   background-size: contain;
   background-position: center;
@@ -271,7 +280,7 @@ body {
   width: 483px;
   min-height: 121px;
   padding: 16px;
-  margin: 0 32px 16px 0;
+  margin: 0;
   background-color: #ebebeb;
   box-sizing: border-box;
   border-radius: 10px;
@@ -518,19 +527,12 @@ body {
   border-color: #445162;
 }
 
-.footer-icons {}
-
 .footer-icons-list {
+  margin: 0 0 32px 0;
+  ;
+  padding: 0 0 0 27px;
   list-style-type: none;
   display: block;
-}
-
-.footer-icons-item {}
-
-.footer-icons-pic {
-  margin: 0 5px 0 0;
-  width: 24px;
-  height: 26px;
 }
 
 .footer-icons-link {
@@ -541,9 +543,71 @@ body {
   color: #ffffff;
   margin: 0 0 30px 0;
   display: flex;
+  position: relative;
 }
 
-.footer-social {}
+.footer-icons-link::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 26px;
+  box-sizing: border-box;
+  position: absolute;
+  top: -2px;
+  left: -28px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-icons-skype::before {
+  background-image: url(../img/skype_icon.png);
+}
+
+.footer-icons-icq::before {
+  background-image: url(../img/icq_icon.png);
+}
+
+.footer-icons-address::before {
+  background-image: url(../img/email_icon.png);
+}
+
+.footer-icons-phone::before {
+  background-image: url(../img/phone_icon.png);
+}
+
+.footer-social {
+  width: 100%;
+  display: flex;
+}
+
+.footer-social-item {
+  display: block;
+  width: 45px;
+  height: 42px;
+  background-image: url(../img/sprite.png);
+}
+
+.social-tw {
+  background-position: 0 0;
+}
+
+.social-fb {
+  background-position: -49px 0;
+  ;
+}
+
+.social-inst {
+  background-position: -98px 0;
+}
+
+.social-google {
+  background-position: -147px 0;
+}
+
+.social-yt {
+  background-position: -196px 0;
+}
 
 .footer-copy {
   margin: 0;
